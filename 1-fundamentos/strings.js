@@ -10,3 +10,13 @@ console.log('escola '.concat('americana ').concat(escola).concat('!'))
 console.log(escola.replace('r','x'))
 console.log(escola.replace(/\d/g,'num')) //Charretenumnum
 console.log('Joao, Maria, Jose'.split(',')) //[ 'Joao', ' Maria', ' Jose' ]
+
+//working with templatestring (consider breakline)
+const escola = "joao de barro"
+const x = `
+    ola,
+    tudo bom Joao?
+    voce está na escola ${escola}, sem bem vindo!
+`
+
+console.log(x)
