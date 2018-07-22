@@ -29,7 +29,7 @@ console.log(notas1) //[ [ 9.3, 3.3 ], [ 10, 9.3 ] ]
 
 //o flatMap permite retornar um array apenas
 Array.prototype.flatMap = function(callback) {
-    return Array.prototype.concat.apply([], this.map(callback))
+    return Array.prototype.concat.apply([], this.map(callback)) //[ 9.3, 3.3, 10, 9.3 ]
 } 
 
 const notas2 = escola.flatMap(getNotasDaTurma)
